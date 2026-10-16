@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Firma Sebastián Pérez</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;color:#222} .aviso{background:#f4f4f4;border:1px solid #ddd;padding:12px 16px;margin-bottom:24px;max-width:560px;font-size:14px;line-height:1.5}</style>
+</head>
+<body>
+
+<div class="aviso">
+  <b>Vista previa de la firma.</b> Para copiarla a Gmail: edita la sección <code>CONFIGURACIÓN</code> del script al final de este archivo,
+  abre esta página en el navegador, selecciona solo la firma (arrastra desde arriba a la izquierda hasta abajo a la derecha) y copia con Ctrl+C.
+</div>
+
+<!-- ======== INICIO DE LA FIRMA ======== -->
+<div id="firma">
+<table cellpadding="0" cellspacing="0" border="0" width="320" style="border-collapse:collapse;width:320px;">
+  <tr>
+    <td rowspan="2" width="154" valign="top" style="padding:0;">
+      <a href="" data-link="web" target="_blank"><img data-img="logo_animado.gif" width="154" height="98" alt="Sebastián Pérez Designer" style="display:block;border:0;width:154px;height:98px;"></a>
+    </td>
+    <td width="166" valign="top" style="padding:0;">
+      <img data-img="nombre.png" width="166" height="51" alt="Sebastián Pérez - Diseñador Gráfico" style="display:block;border:0;width:166px;height:51px;">
+    </td>
+  </tr>
+  <tr>
+    <td width="166" valign="top" style="padding:0;">
+      <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr>
+          <td style="padding:0;"><a href="" data-link="instagram" target="_blank"><img data-img="ig.png" width="41" height="47" alt="Instagram" style="display:block;border:0;"></a></td>
+          <td style="padding:0;"><a href="" data-link="tiktok" target="_blank"><img data-img="tiktok.png" width="35" height="47" alt="TikTok" style="display:block;border:0;"></a></td>
+          <td style="padding:0;"><a href="" data-link="behance" target="_blank"><img data-img="behance.png" width="36" height="47" alt="Behance" style="display:block;border:0;"></a></td>
+          <td style="padding:0;"><a href="" data-link="youtube" target="_blank"><img data-img="youtube.png" width="54" height="47" alt="YouTube" style="display:block;border:0;"></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#000000" style="padding:0;background:#000000;">
+      <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr>
+          <td style="padding:0;"><a href="" data-link="whatsapp" target="_blank"><img data-img="barra_whatsapp.png" width="107" height="22" alt="WhatsApp +56 9 5424 1796" style="display:block;border:0;"></a></td>
+          <td style="padding:0;"><a href="" data-link="mail" target="_blank"><img data-img="barra_mail.png" width="213" height="22" alt="sebastianperezdesigner@gmail.com" style="display:block;border:0;"></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</div>
+<!-- ======== FIN DE LA FIRMA ======== -->
+
+<script>
+/* ================= CONFIGURACIÓN (edita solo esto) ================= */
+var BASE = "";   // URL pública donde subiste la carpeta img, terminada en "/". Ej: "https://raw.githubusercontent.com/TUUSUARIO/firma/main/img/"
+                 // Déjalo vacío ("") para ver una vista previa local con la carpeta img/ junto a este archivo.
+var LINKS = {
+  web:       "https://www.behance.net/sebas7ianperezdsgn",  // al pinchar el logo
+  instagram: "https://www.instagram.com/sebas7ianperezdesigner/",
+  tiktok:    "https://www.tiktok.com/@sebas7ianperezdesigner",
+  behance:   "https://www.behance.net/sebas7ianperezdsgn",
+  youtube:   "https://www.youtube.com/@sebas7ianperezdsgn",
+  whatsapp:  "https://wa.me/56954241796",
+  mail:      "mailto:sebastianperezdesigner@gmail.com"
+};
+/* =================================================================== */
+document.querySelectorAll("[data-img]").forEach(function(i){ i.src = (BASE || "img/") + i.getAttribute("data-img"); });
+document.querySelectorAll("[data-link]").forEach(function(a){ a.href = LINKS[a.getAttribute("data-link")]; });
+</script>
+</body>
+</html>
